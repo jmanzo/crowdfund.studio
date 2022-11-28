@@ -4,11 +4,8 @@ import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
   const navigation = [
-    "Product",
-    "Features",
     "Pricing",
-    "Company",
-    "Blog",
+    "Docs"
   ];
 
   return (
@@ -23,14 +20,14 @@ export default function Navbar() {
                   <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <img
-                        src="/img/logo.svg"
+                        src="/img/logo.png"
                         alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
+                        width="74"
+                        height="74"
+                        className="rounded-full"
                       />
                     </span>
-                    <span>Nextly</span>
+                    <span className="invisible">Crowdfunding Studio</span>
                   </a>
                 </Link>
 
@@ -68,7 +65,7 @@ export default function Navbar() {
                     ))}
                     <Link href="/">
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
-                        Get Started
+                        Shopify App
                       </a>
                     </Link>
                   </>
