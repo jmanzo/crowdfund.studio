@@ -9,12 +9,21 @@ module.exports = {
     extend: {
       colors: {
         trueGray: colors.trueGray,
+        cfsBlue: "#333b69",
+        cfsGray: "#6a798c",
+        cfsOrange: "#fa6262"
       },
+      backgroundImage: {
+        'hero': "url('/img/bg-hero.png')",
+      }
     },
     fontFamily: {
       sans: ["Roboto", ...defaultTheme.fontFamily.sans],
       stock: [defaultTheme.fontFamily.sans],
     },
+    fontSize: {
+      h1: ['2.5rem', '1.3']
+    }
   },
   variants: {
     extend: {},

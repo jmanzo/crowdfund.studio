@@ -1,4 +1,5 @@
 import { ThemeProvider } from "next-themes";
+import "../css/global.css";
 import "../css/tailwind.css";
 
 function MyApp({ Component, pageProps }) {

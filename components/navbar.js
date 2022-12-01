@@ -33,7 +33,7 @@ export default function Navbar() {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+                  className="px-2 py-1 ml-auto text-white rounded-md lg:hidden focus:outline-none">
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,13 +58,23 @@ export default function Navbar() {
                   <>
                     {navigation.map((item, index) => (
                       <Link key={index} href="/">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a className="w-full py-2 text-white rounded-md  focus:outline-none text-center">
                           {item}
                         </a>
                       </Link>
                     ))}
                     <Link href="/">
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                      <a className="
+                        w-full 
+                        px-6 
+                        py-2 
+                        mt-3 
+                        text-center 
+                        text-white 
+                        rounded-md 
+                        lg:ml-5
+                        bg-gradient-to-r from-[#f8875f] to-[#fa6262]
+                      ">
                         Shopify App
                       </a>
                     </Link>
@@ -76,12 +86,12 @@ export default function Navbar() {
         </Disclosure>
 
         {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
+        <div className="hidden text-center lg:flex lg:items-center xl:w-3/6 lg:w-6/6">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href="/">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                  <a className="inline-block px-4 py-2 text-lg text-cfsBlue no-underline dark:text-gray-200 font-bold text-base">
                     {menu}
                   </a>
                 </Link>
@@ -90,10 +100,17 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <div className="hidden mr-3 space-x-4 lg:flex nav__item">
+        <div className="hidden mr-3 space-x-4 lg:flex nav__item xl:w-1/6">
           <Link href="/">
-            <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-              Get Started
+            <a className="
+              px-6 py-2 
+              text-white
+              text-base
+              rounded-md 
+              md:ml-5
+              bg-gradient-to-r from-[#f8875f] to-[#fa6262]
+            ">
+            Shopify App
             </a>
           </Link>
 
