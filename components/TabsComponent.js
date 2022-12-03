@@ -8,6 +8,7 @@ import RewardsAndAddonsSection from "./docs/RewardsAndAddonsSection";
 import AddSingleBackerSection from "./docs/AddSingleBackerSection";
 import UpsellsSection from "./docs/UpsellsSection";
 import CustomizationsSection from "./docs/CustomizationsSection";
+import TemplateSection from "./docs/TemplateSection";
 
 export default function TabsComponent ({ tab }) {
     const [tabs, setTabs] = useState([{
@@ -49,7 +50,7 @@ export default function TabsComponent ({ tab }) {
         id: "template",
         title: "Template",
         active: false,
-        // component: <TemplateSection />
+        component: <TemplateSection />
     }, {
         id: "preview-survey",
         title: "Preview Survey - View Surveys Before Launching",
