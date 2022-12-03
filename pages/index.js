@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className="bg-hero bg-cover bg-right-top bg-no-repeat pb-44">
+      <div className="bg-hero bg-cover md:bg-120% bg-right-top bg-no-repeat pb-40">
         <Navbar />
         <Hero />
       </div>

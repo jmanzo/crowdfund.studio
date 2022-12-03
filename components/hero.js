@@ -15,28 +15,60 @@ export default function Hero() {
   return (
     <>
       <Container className="flex flex-wrap xl:w-10/12 sm:w-full">
-        <div className="flex items-center xl:w-4/12 my-0 mx-auto sm:w-full md:w-8/12">
+        <div className="flex items-center my-0 mx-auto w-full md:w-4/12">
           <div className="max-w-2xl mb-8">
             <h1 className="text-h1 tracking-tight text-cfsBlue lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Marketing.<br/>
-              Without A Markup.
+              Survey<br/>
+              Management<br/>
+              Through Shopify
             </h1>
           </div>
         </div>
-        <div className="flex items-center justify-center xl:w-4/12 my-0 mx-auto sm:w-full md:w-8/12">
-          <p className="py-5 text-[1.25rem] text-cfsBlue dark:text-white">
+        <div className="
+          flex 
+          items-center
+          justify-center
+          flex-wrap
+          my-0 
+          mx-auto 
+          w-full 
+          md:w-4/12
+          flex-col
+        ">
+          <h2 className="
+            tracking-tight 
+            text-white 
+            italic 
+            text-xl 
+            leading-tight 
+            xl:text-6xl
+          ">
+            "It's No-Brainer If You Have A
+            Shopify Store 🧠"
+          </h2>
+          <h2 className="
+            tracking-tight 
+            text-white 
+            italic 
+            text-xl 
+            leading-tight 
+            xl:text-6xl
+          ">
+            - Alia Lau, Two Pillars (3-time creator, over $2M raised)
+          </h2>
+          {/* <p className="py-5 text-[1.25rem] text-cfsBlue dark:text-white">
             Why pay nearly 25% of your revenue to marketing agencies?{' '}
             Crowdfund Studio gives you access to a suite of tools used{' '}
             by all the agencies to market Kickstarter & Indiegogo{' '}
             campaigns. You do it yourself, we don't take any margin.
-          </p>
+          </p> */}
         </div>
       </Container>
       <Container>
         <div className="flex flex-col justify-center xl:w-10/12 my-0 mx-auto sm:w-full">
           {/* <!-- Optin Form --> */}
           <div className="optin dark:bg-black">
-            <h3 className="optin__title dark:text-white">Pixel Your Backers, Automated Facebook Ad Creation And More...</h3>
+            <h3 className="optin__title dark:text-white">Sales don't need to end with the campaign. Make 30% more with Crowdfund Studio.</h3>
               <form className="optin__form" action="https://getform.io/f/742118ab-f792-426d-8080-5da2b90a339f" method="POST">
                 <div className="optin__form-group form-group">                    
                   <input 

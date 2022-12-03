@@ -17,6 +17,12 @@ module.exports = {
         'hero': "url('/img/bg-hero.png')",
       }
     },
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '120%': '120%'
+    },
     fontFamily: {
       sans: ["Roboto", ...defaultTheme.fontFamily.sans],
       stock: [defaultTheme.fontFamily.sans],
