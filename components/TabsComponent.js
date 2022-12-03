@@ -9,6 +9,10 @@ import AddSingleBackerSection from "./docs/AddSingleBackerSection";
 import UpsellsSection from "./docs/UpsellsSection";
 import CustomizationsSection from "./docs/CustomizationsSection";
 import TemplateSection from "./docs/TemplateSection";
+import PreviewSurveySection from "./docs/PreviewSurveySection";
+import EmailFrequencySection from "./docs/EmailFrequencySection";
+import SurveyDiscountSection from "./docs/SurveyDiscountSection";
+import LaunchSurveySection from "./docs/LaunchSurveySection";
 
 export default function TabsComponent ({ tab }) {
     const [tabs, setTabs] = useState([{
@@ -55,22 +59,22 @@ export default function TabsComponent ({ tab }) {
         id: "preview-survey",
         title: "Preview Survey - View Surveys Before Launching",
         active: false,
-        // component: <PreviewSurveySection />
+        component: <PreviewSurveySection />
     }, {
         id: "email-frequency",
         title: "Survey Email Frequency",
         active: false,
-        // component: <EmailFrequencySection />
+        component: <EmailFrequencySection />
     }, {
         id: "survey-discount",
         title: "How The Survey Discount Works",
         active: false,
-        // component: <SurveyDiscountSection />
+        component: <SurveyDiscountSection />
     }, {
         id: "launch-survey",
         title: "Launch - Start Sending Surveys",
         active: false,
-        // component: <LaunchSurveySection />
+        component: <LaunchSurveySection />
     }]);
 
     useEffect(
