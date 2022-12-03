@@ -7,6 +7,7 @@ import EmailingBackersSection from "./docs/EmailingBackersSection";
 import RewardsAndAddonsSection from "./docs/RewardsAndAddonsSection";
 import AddSingleBackerSection from "./docs/AddSingleBackerSection";
 import UpsellsSection from "./docs/UpsellsSection";
+import CustomizationsSection from "./docs/CustomizationsSection";
 
 export default function TabsComponent ({ tab }) {
     const [tabs, setTabs] = useState([{
@@ -43,7 +44,7 @@ export default function TabsComponent ({ tab }) {
         id: "customizations",
         title: "Customizations",
         active: false,
-        // component: <CustomizationsSection />
+        component: <CustomizationsSection />
     }, {
         id: "template",
         title: "Template",
