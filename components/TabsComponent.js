@@ -6,6 +6,7 @@ import LinkYourProjectSection from "./docs/LinkYourProjectSection";
 import EmailingBackersSection from "./docs/EmailingBackersSection";
 import RewardsAndAddonsSection from "./docs/RewardsAndAddonsSection";
 import AddSingleBackerSection from "./docs/AddSingleBackerSection";
+import UpsellsSection from "./docs/UpsellsSection";
 
 export default function TabsComponent ({ tab }) {
     const [tabs, setTabs] = useState([{
@@ -37,7 +38,7 @@ export default function TabsComponent ({ tab }) {
         id: "upsells",
         title: "Upsells",
         active: false,
-        // component: <UpsellsSection />
+        component: <UpsellsSection />
     }, {
         id: "customizations",
         title: "Customizations",
