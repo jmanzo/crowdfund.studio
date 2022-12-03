@@ -1,7 +1,7 @@
 function TemplateSection() {
   return (
     <div className="p-5">    
-        <h4 className="text-cfsBlue text-2xl mb-4">
+        <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
             Customize the email your backers will receive when getting their unique survey URL.
         </h4>
         <p className="mb-4">

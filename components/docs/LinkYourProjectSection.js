@@ -1,7 +1,7 @@
 export default function LinkYourProjectSection () {
     return (
         <div className="p-5">
-            <h4 className="text-cfsBlue text-2xl mb-4">Link your project.</h4>
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">Link your project.</h4>
             <p className="mb-4">You can link both Kickstarter and Indiegogo projects. Currently we support Indiegogo via{' '}
             account sync and Kickstarter via CSV upload. We are working on building the account sync{' '}
             feature for Kickstarter, but the functionality for you remains the same in the end.</p>

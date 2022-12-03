@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-const ThemeChanger = () => {
+const ThemeChanger = ({ page }) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -29,7 +29,15 @@ const ThemeChanger = () => {
       ) : (
         <button
           onClick={() => setTheme("dark")}
-          className="text-white rounded-full outline-none focus:outline-none focus-visible:ring focus-visible:ring-gray-100 focus:ring-opacity-20">
+          className={`
+            ${page ? 'ring-gray-100' : 'text-white'}
+            rounded-full 
+            outline-none 
+            focus:outline-none 
+            focus-visible:ring 
+            focus-visible:ring-gray-100 
+            focus:ring-opacity-20
+          `}>
           <span className="sr-only">Dark Mode</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

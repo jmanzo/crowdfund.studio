@@ -9,8 +9,6 @@ export default function Docs() {
     const router = useRouter();
     const { tab } = router.query;
 
-    console.log('::: tab :::', tab);
-
     return (
         <>
             <Head>
@@ -23,7 +21,7 @@ export default function Docs() {
             </Head>
 
             <div>
-                <Navbar />
+                <Navbar page />
 
                 {tab ? (
                     <TabsComponent tab={tab} />

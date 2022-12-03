@@ -1,7 +1,7 @@
 function AddSingleBackerSection() {
     return (
         <div className="p-5">
-            <h4 className="text-cfsBlue text-2xl mb-4">Sometimes you want to add someone that reaches out to you directly.</h4>
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">Sometimes you want to add someone that reaches out to you directly.</h4>
             <p className="mb-4">
             In case you want to add just one or a handful of backers, you can use the “Add Single Backer” feature.{' '}
             This allows you to add a backer as if they have pledged through Kickstarter or Indiegogo. Just follow{' '}

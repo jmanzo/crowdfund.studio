@@ -1,7 +1,7 @@
 export default function SurveyDiscountSection () {
     return (
         <div>
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 We generate a unique, one-time use discount code for each successful backer.
             </h4>
             <p className="mb-4">
@@ -13,7 +13,7 @@ export default function SurveyDiscountSection () {
                 checkout on Shopify as they did to pledge for your project on Kickstarter/Indiegogo.</strong>
             </p>
 
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 Errored backers do not get a discount code.
             </h4>
             <p className="mb-4">

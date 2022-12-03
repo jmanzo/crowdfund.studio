@@ -1,7 +1,7 @@
 export default function ChoosePlanSection() {
   return (
     <div className="p-5">
-        <h4 className="text-cfsBlue text-2xl mb-4">ChooseTwo plans. Your choice. Free 30-day Trial.</h4>
+        <h4 className="text-cfsBlue dark:text-white text-2xl mb-4">ChooseTwo plans. Your choice. Free 30-day Trial.</h4>
         <ul className="my-5 list-disc pl-3">
           <li className="mb-4">
             <p>$0.00/backer + 3% of upsells + Standard Monthly Price (cancel anytime).{' '}

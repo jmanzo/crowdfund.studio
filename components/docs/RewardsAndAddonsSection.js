@@ -3,15 +3,15 @@ import Link from "next/link";
 export default function RewardsAndAddonsSection () {
     return (
         <div className="p-5">
-            <h4 className="text-cfsBlue text-2xl mb-4">Mapping Products to Rewards & Add-Ons</h4>
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">Mapping Products to Rewards & Add-Ons</h4>
             <p className="mb-4">You can map your Shopify Products to Rewards & Add-Ons only after you{' '}
             <Link href="/docs/link-your-project">
-                <a target="_blank">Link Your Project</a>
+                <a className="text-cfsBlue underline dark:text-white" target="_blank">Link Your Project</a>
             </Link>.</p>
             <p className="mb-4">
                 As a Shopify store owner, you’ve likely already created products. If not, please see{' '}
                 <Link href="https://help.shopify.com/en/manual/products/add-update-products">
-                    <a target="_blank">this article</a>    
+                    <a className="text-cfsBlue underline dark:text-white" target="_blank">this article</a>    
                 </Link>.
             </p>
             <p className="mb-4">

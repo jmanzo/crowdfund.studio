@@ -1,7 +1,7 @@
 export default function EmailFrequencySection () {
     return (
         <div className="p-5">
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 Explaining how frequently backers get emailed and when they stop getting emailed.
             </h4>
             <p className="mb-4">

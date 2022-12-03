@@ -1,7 +1,7 @@
 function CustomizationsSection() {
     return (
         <div className="p-5">
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 Make a totally custom design according to your brand guidelines and help backers feel welcome.
             </h4>
             <p className="mb-4">
@@ -9,7 +9,7 @@ function CustomizationsSection() {
                 see the live changes. Go bonkers!
             </p>
 
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 What is the pop-up feature?
             </h4>
             <p className="mb-4">

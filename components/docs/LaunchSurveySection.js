@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function LaunchSurveySection () {
     return (
-        <div>
-            <h4 className="text-cfsBlue text-2xl mb-4">
+        <div className="p-5">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 After you click “Turn On” we’ll double check your survey setup and email you when it’s launched.
             </h4>
             <p className="mb-4">
@@ -12,7 +12,7 @@ export default function LaunchSurveySection () {
                 will be launched. Once launched the first email with the survey URL will be sent to your backer.s
             </p>
 
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 Pausing your survey.
             </h4>
             <p className="mb-4">
@@ -28,18 +28,18 @@ export default function LaunchSurveySection () {
                 Use this only in critical situations where you must stop backers from checking out.
             </p>
 
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 How do I find a backer’s survey URL?
             </h4>
             <p className="mb-4">
                 Every backer will be assigned a survey URL in their customer profile notes. Search for the backer’s{' '}name or email in Shopify, then click{' '}
                 <Link href="https://capture.dropbox.com/PJE4bpNMV6azA59d">
-                    <a className="text-cfsBlue underline" target="_blank">edit</a>
+                    <a className="text-cfsBlue dark:text-white underline" target="_blank">edit</a>
                 </Link>{' '}
                 to see the full URL.
             </p>
 
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 How do I email a backer with their survey URL manually?
             </h4>
             <p className="mb-4">

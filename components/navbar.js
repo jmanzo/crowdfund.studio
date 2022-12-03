@@ -2,10 +2,16 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 
-export default function Navbar() {
+export default function Navbar({ page }) {
   const navigation = [
-    "Pricing",
-    "Docs"
+    {
+      label: "Pricing",
+      url: "/docs/choose-a-plan"
+    },
+    {
+      label: "Docs",
+      url: "/docs/guide"
+    }
   ];
 
   return (
@@ -27,13 +33,21 @@ export default function Navbar() {
                         className="rounded-full"
                       />
                     </span>
-                    <span className="invisible">Crowdfunding Studio</span>
+                    <span className="hidden">Crowdfunding Studio</span>
                   </a>
                 </Link>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-white rounded-md lg:hidden focus:outline-none">
+                  className={`
+                    px-2 
+                    py-1 
+                    ml-auto
+                    ${ page ? 'text-cfsGray' : 'text-white' }
+                    rounded-md 
+                    lg:hidden 
+                    focus:outline-none
+                  `}>
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -57,24 +71,35 @@ export default function Navbar() {
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                     {navigation.map((item, index) => (
-                      <Link key={index} href="/">
-                        <a className="w-full py-2 text-white rounded-md  focus:outline-none text-center">
-                          {item}
+                      <Link key={index} href={item.url}>
+                        <a className={`
+                          w-full 
+                          py-2
+                          ${ page ? 'text-cfsGray' : 'text-white' }
+                          rounded-md  
+                          focus:outline-none 
+                          text-center
+                          font-bold
+                        `}>
+                          {item.label}
                         </a>
                       </Link>
                     ))}
-                    <Link href="/">
-                      <a className="
-                        w-full 
-                        px-6 
-                        py-2 
-                        mt-3 
-                        text-center 
-                        text-white 
-                        rounded-md 
-                        lg:ml-5
-                        bg-gradient-to-r from-[#f8875f] to-[#fa6262]
-                      ">
+                    <Link href="https://apps.shopify.com/crowdfund-studio">
+                      <a
+                        target="_blank"
+                        className="
+                          w-full 
+                          px-6 
+                          py-2 
+                          mt-3 
+                          text-center 
+                          text-white 
+                          rounded-md 
+                          lg:ml-5
+                          bg-gradient-to-r from-[#f8875f] to-[#fa6262]
+                        "
+                      >
                         Shopify App
                       </a>
                     </Link>
@@ -90,9 +115,9 @@ export default function Navbar() {
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href="/">
+                <Link href={menu.url}>
                   <a className="inline-block px-4 py-2 text-lg text-cfsBlue no-underline dark:text-gray-200 font-bold text-base">
-                    {menu}
+                    {menu.label}
                   </a>
                 </Link>
               </li>
@@ -101,8 +126,8 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item xl:w-1/6">
-          <Link href="/">
-            <a className="
+          <Link href="https://apps.shopify.com/crowdfund-studio">
+            <a target="_blank" className="
               px-6 py-2 
               text-white
               text-base
@@ -114,7 +139,7 @@ export default function Navbar() {
             </a>
           </Link>
 
-          <ThemeChanger />
+          <ThemeChanger page={page}/>
         </div>
       </nav>
     </div>

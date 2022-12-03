@@ -98,36 +98,56 @@ export default function TabsComponent ({ tab }) {
     )
 
     return (
-        <Container className="flex flex-wrap xl:w-10/12 sm:w-full">
-            <div className="flex items-start">
+        <Container className="
+            flex 
+            flex-wrap 
+            xl:w-10/12 
+            sm:w-full
+        ">
+            <div className="flex flex-wrap md:flex-nowrap items-start">
                 <ul 
-                className="nav nav-tabs flex flex-col flex-wrap list-none border-b-0 pl-0 mr-4" 
+                className="
+                    nav 
+                    nav-tabs 
+                    flex 
+                    flex-col 
+                    flex-wrap 
+                    list-none 
+                    border-b-0 
+                    pl-0 
+                    mr-4
+                    w-full
+                " 
                 id="tabs-tabVertical"
                 role="tablist">
                     {tabs.map(t => {
                         return (
                             <li 
-                            className="nav-item flex-grow text-left" 
+                            className="nav-item flex-grow text-left"
                             role="presentation"
                             key={`key-${t.id}`}
                             >
                                 <a 
                                 onClick={handleClick}
-                                className="
+                                className={`
                                   nav-link
                                   block
                                   font-medium
                                   text-xs
                                   leading-tight
-                                  border-x-0 border-t-0 border-b-2 border-transparent
+                                  border-x-0 
+                                  border-t-0 
+                                  border-b-2 
+                                  border-transparent
                                   px-4
                                   py-2
                                   w-72
-                                  hover:border-transparent 
-                                  hover:bg-gray-100
+                                  hover:border-transparent
                                   focus:border-transparent
                                   cursor-pointer
-                                "
+                                  rounded
+                                  ${t.active ? 'bg-cfsBlue text-white' : ''}
+                                `}
                                 id={t.id}
                                 data-bs-toggle="pill" 
                                 data-bs-target={`#tabs-${t.id}`} 

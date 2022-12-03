@@ -1,7 +1,7 @@
 export default function PreviewSurveySection () {
     return (
         <div className="p-5">
-            <h4 className="text-cfsBlue text-2xl mb-4">
+            <h4 className="text-cfsBlue text-2xl mb-4 dark:text-white">
                 As you design your survey, you can easily preview it via the Preview Survey tab.
             </h4>
             <p className="mb-4">
